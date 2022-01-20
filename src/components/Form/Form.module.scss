@@ -1,0 +1,7 @@
+.container {
+    & > * {
+        &:not(:first-child) {
+            margin: 16px 0 0;
+        }
+    }
+}
