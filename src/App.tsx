@@ -1,4 +1,5 @@
-import { Form, User } from './components';
+import { Form } from './components';
+import { User } from './features/user/User';
 
 import styles from './App.module.scss';
 

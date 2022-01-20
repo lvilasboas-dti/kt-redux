@@ -1,12 +1,16 @@
-import { FC, useState } from 'react';
+import { FC } from 'react';
 import { Input } from '..';
+import { UserActions } from '../../features/user/redux/User.actions';
 
 import styles from './Form.module.scss';
 
-export const Form: FC = () => {
-    const [name, setName] = useState<string>('');
-    const [email, setEmail] = useState<string>('');
-
+interface FormProps {
+    name: string;
+    email: string;
+    setName: (name: string) => void;
+    setEmail: (email: string) => void;
+}
+export const Form: FC<FormProps> = ({ name, email, setName, setEmail }) => {
     return (
         <div className={styles['container']}>
             <Input
