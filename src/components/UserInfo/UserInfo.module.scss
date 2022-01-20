@@ -1,0 +1,11 @@
+.item {
+    &:not(:first-child) {
+        margin: 16px 0 0;
+    }
+
+    .value {
+        width: 200px;
+        height: 20px;
+        border: 1px solid #e6e6e6;
+    }
+}
